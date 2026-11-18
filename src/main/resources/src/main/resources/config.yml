@@ -1,1 +1,40 @@
 
+messages:
+  prefix: "&8[&bWOW&8] &r"
+
+announcement-format: "&8[&6ANNOUNCEMENT&8] &f{message}"
+
+spawn-countdown-seconds: 3
+
+default-rank: PLAYER
+
+ranks:
+  OWNER:
+    prefix: "&4[OWNER]"
+    suffix: ""
+    weight: 100
+    permissions:
+      - "*"
+
+  ADMIN:
+    prefix: "&c[ADMIN]"
+    suffix: ""
+    weight: 80
+    permissions:
+      - "wowmanager.admin"
+
+  PLAYER:
+    prefix: "&7[PLAYER]"
+    suffix: ""
+    weight: 1
+    permissions: []
+
+scoreboard:
+  enabled: true
+  title: "&b&lWOW SMP"
+  lines:
+    - "&8&m----------------"
+    - "&7Player: &f%player%"
+    - "&7Rank: &f%rank%"
+    - "&7Online: &a%online%"
+    - "&8&m----------------"
