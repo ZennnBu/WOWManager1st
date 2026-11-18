@@ -1,1 +1,24 @@
+name: WOWManager
+version: 1.0.0
+main: com.wowmanager.WOWManager
+api-version: '1.21'
+author: ZennnBu
+description: Standalone SMP Management Plugin
 
+commands:
+  announcement:
+    description: Broadcast an announcement
+  setspawn:
+    description: Set server spawn
+  spawn:
+    description: Teleport to spawn
+  rank:
+    description: Manage standalone ranks
+  scoreboard:
+    description: Toggle scoreboard
+
+permissions:
+  wowmanager.admin:
+    default: op
+  wowmanager.spawn.bypass:
+    default: op
